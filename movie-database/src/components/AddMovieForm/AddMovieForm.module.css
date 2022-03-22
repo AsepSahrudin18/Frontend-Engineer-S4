@@ -1,0 +1,119 @@
+/* Small Screen */
+.container {
+    margin: 1rem;
+    padding-bottom: 2rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.form__left{
+    margin-bottom: 1rem;
+}
+
+.form__image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.form__title {
+    color: #4361ee;
+    margin-bottom: 1rem;
+    font-size: 2.44rem;
+}
+
+.form__action input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 1rem;
+    border-radius: 25px;
+    border-color: #4361ee;
+}
+
+.form__label {
+    color: #64748b;
+}
+
+.form__submit {
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #4361ee;
+    color: #fff;
+}
+
+/* Medium Screen */
+@media(min-width: 768px){
+    .container {
+        margin: 2rem;
+    }
+
+    .form {
+        margin: 0 1rem;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .form__left {
+        flex-basis: 50%;
+    }
+
+    .form__right {
+        flex-basis: 40%;
+      }
+
+    .form__action input[type=text] {
+        border-radius: 10px;
+        padding: 6px 20px;
+    }
+
+    .form__submit {
+        padding: 6px 10px;
+        border: none;
+        border-radius: 10px;
+        background-color: #4361ee;
+        color: #fff;
+        width: 100%;
+    }
+
+    .form__title {
+        color: #4361ee;
+        margin-bottom: 1rem;
+        font-size: 1.44rem;
+    }
+}
+
+/* Large Screen */
+@media (min-width: 992px) {
+    .container {
+      max-width: 1200px;
+      margin: 3rem auto;
+    }
+
+    .form__title {
+        color: #4361ee;
+        margin-bottom: 1rem;
+        font-size: 2.44rem;
+    }
+
+    .form__action input[type=text] {
+        border-radius: 10px;
+        padding: 12px 20px;
+    }
+
+    .form__submit {
+        padding: 12px 20px;
+        border: none;
+        border-radius: 10px;
+        background-color: #4361ee;
+        color: #fff;
+        width: 100%;
+    }
+    
+    
+}
