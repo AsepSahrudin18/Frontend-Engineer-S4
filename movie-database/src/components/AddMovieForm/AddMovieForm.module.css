@@ -1,0 +1,136 @@
+/* Small Screen */
+.container {
+    margin: 1rem;
+    padding-bottom: 2rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.form__left{
+    display: none;
+}
+
+
+.form__image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+    margin-bottom: 1rem;
+    
+}
+
+.form__title {
+    color: #4361ee;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.form__action input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 1rem;
+    border-radius: 25px;
+    border-color: #4361ee;
+}
+
+.form__label {
+    color: #64748b;
+}
+
+.form__year {
+    color: #64748b;
+}
+
+.form__submit {
+    padding: 0.8rem ;
+    border: none;
+    border-radius: 25px;
+    background-color: #4361ee;
+    color: #fff;
+    width: 100%;
+    
+}
+
+.form__input {
+    margin-top: 10px;
+}
+/* Medium Screen */
+@media(min-width: 768px){
+    .form {
+        margin: 0 1rem;
+        flex-direction: column;
+        text-align: center;
+    }
+   
+}
+
+/* Large Screen */
+@media (min-width: 992px) {
+    .container {
+      max-width: 1200px;
+      margin: 3rem auto;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .form__left {
+        flex-basis: 45%;
+        display: flex;
+    }
+
+    .form__right {
+        flex-basis: 45%;
+    }
+
+    .form__image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 25px;
+    }
+
+    .form__year {
+        color: #64748b;
+    }
+
+    .form__title {
+        font-size: 2rem;
+    }
+
+    .form__submit {
+        margin-bottom: 1rem;
+    }
+
+    /* .form__title {
+        color: #4361ee;
+        margin-bottom: 1rem;
+        font-size: 2.44rem;
+    }
+
+    .form__action input[type=text] {
+        border-radius: 10px;
+        padding: 12px 20px;
+    }
+
+    .form__submit {
+        padding: 12px 20px;
+        border: none;
+        border-radius: 10px;
+        background-color: #4361ee;
+        color: #fff;
+        width: 100%;
+    } */
+    
+    
+}
