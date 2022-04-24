@@ -2,6 +2,7 @@
  * Import CSS Module
  * Disimpan ke variable styles (untuk penamaan variable bebas)
  */
+import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
 
 // Buat Component Navbar: Menampilkan Navigasi
@@ -14,11 +15,21 @@ function Navbar() {
         </div>
         <div>
           <ul className={styles.navbar__list}>
-            <li className={styles.navbar__item}>Home</li>
-            <li className={styles.navbar__item}>Add Movie</li>
-            <li className={styles.navbar__item}>Popular</li>
-            <li className={styles.navbar__item}>Playing Now</li>
-            <li className={styles.navbar__item}>Top Rated</li>
+            <li className={styles.navbar__item}>
+              <Link to="/">Home</Link>
+            </li>
+            <li className={styles.navbar__item}>
+              <Link to="/movie/create">Add Movie</Link>
+            </li>
+            <li className={styles.navbar__item}>
+              <Link to="/movie/popular">Popular</Link>
+            </li>
+            <li className={styles.navbar__item}>
+              <Link to="/movie/now">Playing Now</Link>
+            </li>
+            <li className={styles.navbar__item}>
+              <Link to="/movie/top">Top Rated</Link>
+            </li>
           </ul>
         </div>
       </nav>

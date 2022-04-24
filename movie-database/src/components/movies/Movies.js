@@ -4,10 +4,10 @@ import styles from "./Movies.module.css";
 import { nanoid } from "nanoid";
 
 function Movies(props) {
-  // Melakukan destructing props
+  // destructing props
   const { movies, setMovies } = props;
 
-  // Menambahkan fungsi untuk handleClick
+  // fungsi handleClick
   function handleClick() {
     const movie = {
       id: nanoid(),

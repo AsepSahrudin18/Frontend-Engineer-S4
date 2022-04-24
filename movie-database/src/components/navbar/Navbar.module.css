@@ -24,7 +24,6 @@
 }
 
 /* Medium Screen */
-/* Cara bacanya: mirip if else, jika min lebarnya 768px maka, kasih style baru */
 @media (min-width: 768px) {
   .navbar {
     flex-direction: row;
