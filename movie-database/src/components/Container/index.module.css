@@ -1,0 +1,5 @@
+.container {
+  /* max-width fungsinya untuk membatasi supaya konten tidak terlalu mepet samping */
+  max-width: 1200px;
+  margin: 0 auto;
+}
